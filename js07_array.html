@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	document.write(arr2, "<br/>");
+
+	arr3.unshift("역삼동");
+	document.write(arr3, "<br/>");
+
+	// Json 방식으로 데이터 처리하기
+	var jsonData = {
+		username: 'hong gildong', tel: "010-1234-5678", addr: "강남구 역삼동",
+		email: {
+			fistEmail: "abcd@nate.com",
+			secondEmail: "xyz@naver.com"
+		},
+		msg: function(){
+			console.log("콘솔에 문자찍음.");
+			return 150;
+		}
+	};
+	
+	document.write("name= ", jsonData.username);
+	document.write("<br/>email= ", jsonData.email);
+	document.write("<br/>함수= ", jsonData.msg);
+	console.log(jsonData);
+	
+</script>	
+</body>
+</html>
